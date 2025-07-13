@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="APPLE special.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIGION IT SOLUTION - Portfolio Showcase</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #121212;
+        color: #ffffff;
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1f1f1f;
+        color: white;
+        padding: 20px 70px;
+      }
+
+      header img {
+        max-height: 50px;
+      }
+
+      header .contact {
+        font-size: 1.2em;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .portfolio {
+        margin-bottom: 20px;
+      }
+
+      .contactus{
+        margin: 45px;
+      }
+
+      .portfolio h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ff9800;
+      }
+
+      .accordion {
+        margin: 10px 50px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #1e1e1e;
+      }
+
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.9s ease;
+      }
+
+      .accordion-header:hover {
+        background-color: #444;
+      }
+
+      .accordion-header .arrow {
+        transition: transform 0.5s ease;
+      }
+
+      .accordion-header.open .arrow {
+        transform: rotate(180deg);
+      }
+
+      .accordion-content {
+        display: none;
+        padding: 10px;
+        background-color: #252525;
+        border-top: 1px solid #444;
+        animation: slideDown 0.9s ease forwards;
+      }
+
+      .accordion-content .content-wrapper {
+        display: flex;
+        gap: 20px;
+      }
+
+      /* .accordion-content video {
+            width: 50%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        } */
+
+      .accordion-content .features {
+        flex: 1;
+      }
+
+      .carousel {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+      }
+
+      .carousel-container {
+        display: flex;
+        transition: transform 0.8s ease-in-out;
+      }
+
+      .carousel-container img {
+        min-width: 100%;
+        height: auto;
+      }
+
+      .carousel-prev,
+      .carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .carousel-prev {
+        left: 10px;
+      }
+
+      .carousel-next {
+        right: 10px;
+      }
+
+
+
+      @media (max-width: 768px) {
+        .accordion-content .content-wrapper {
+          flex-direction: column;
+        }
+
+        .carousel-container img {
+          min-width: 100%;
+          height: auto;
+        }
+        .accordion {
+          margin: 10px 0px;
+        }
+        header {
+          padding: 20px 20px;
+        }
+        .carousel {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
+        .contactus{
+        margin: 0px;
+      }
+      h2{
+        padding-bottom: 14px;
+      }
+      .portfolio{
+        padding-top: 10px;
+      }
+      }
+
+      
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 1;
+          transform: translateY(0);
+          
+        }
+        to {
+          opacity: 0;
+          transform: translateY(-10px);
+          
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="https://rigionitsolutions.vercel.app/" target="_blank">
+        <img style="cursor: pointer;" src="logo.png" alt="Logo" />
+    </a>
+      <div class="contact">
+        <a href="#contact-section" style="color: white; text-decoration: none;">Contact Us</a>
+    </div>
+    </header>
+    <main>
+      <section class="portfolio" id="portfolio-1000">
+        <h2>Portfolio Category A - ₹699/-</h2>
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 1 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio 1 -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category A/1st/one (1).png"
+                    alt="Portfolio 1 Image 1"
+                  />
+                  <img
+                    src="./Category A/1st/one (2).png"
+                    alt="Portfolio 1 Image 2"
+                  />
+                  <img
+                    src="./Category A/1st/one (3).png"
+                    alt="Portfolio 1 Image 3"
+                  />
+                  <img
+                    src="./Category A/1st/one (4).png"
+                    alt="Portfolio 1 Image 3"
+                  />
+                  <img
+                    src="./Category A/1st/one (5).png"
+                    alt="Portfolio 1 Image 3"
+                  />
+                  <img
+                    src="./Category A/1st/one (6).png"
+                    alt="Portfolio 1 Image 3"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>
+                  Features: <br> 📌 A single-page design with smooth scrolling navigation. <br>
+                  📌 High-quality design, responsive layout, and
+                  user-friendly navigation. <br> 
+                  📌 Showcases projects, publications, and achievements.
+                  <br>📌 Perfect for academic and research professionals.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 2 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio 2 -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category A/2nd/two(1).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/2nd/two(2).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/2nd/two(3).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/2nd/two(4).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/2nd/two(5).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>📌 A sleek and modern portfolio with a clutter-free design. <br>
+                  📌 Showcases your work, skills, and experience <br>
+                  📌 Perfect for developers, designers, and creatives. <br>
+                  📌 Fast, responsive, and optimized for all devices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 3 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio 2 -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category A/3rd/third(1).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/3rd/third(2).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/3rd/third(3).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/3rd/third(4).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/3rd/third(5).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/3rd/third(6).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 Includes sections for work, skills, and contact. <br>
+                  📌 Perfect for academic and research professionals. <br>
+                  📌 Fast, responsive, and easy to customize. <br>
+                  📌 SEO optimized, fast loading, and modern design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 4 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio 2 -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category A/4th/fourth(1).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/4th/fourth(2).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/4th/fourth(3).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/4th/fourth(4).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 Showcases your work, skills, and experience <br>
+                  📌 Perfect for developers, designers, and creatives. <br>
+                  📌 A single-page design with smooth scrolling navigation. <br>
+                  📌 Simple yet effective to showcase your expertise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 5 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio 2 -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category A/5th/fifth(1).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/5th/fifth(2).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/5th/fifth(3).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/5th/fifth(4).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                  <img
+                    src="./Category A/5th/fifth(5).png"
+                    alt="Portfolio 2 Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A refined and elegant design to reflect your personality. <br>
+                  📌 A visually stunning showcase for designers and developers. <br>
+                  📌 Interactive project demos and detailed case studies. <br>
+                  📌 Optimized for performance and accessibility.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio-1400">
+        <h2>Portfolio Category B - ₹1299/-</h2>
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 1 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/1st/one(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/1st/one(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/1st/one(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/1st/one(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/1st/one(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/1st/one(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/1st/one(7).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A professional portfolio to attract clients and gigs. <br>
+                  📌 Includes a services section and contact form. <br>
+                  📌 Ideal for personal branding and career growth. <br>
+                  📌 Simple yet effective to showcase your expertise.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 2 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/2nd/two(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/2nd/two(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/2nd/two(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/2nd/two(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/2nd/two(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/2nd/two(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A sleek and modern dark-themed portfolio. <br>
+                  📌 Perfect for developers, designers, and creatives. <br>
+                  📌 Offers an immersive visual experience. <br>
+                  📌 Showcases projects, certifications, and achievements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 3 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/3rd/third(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/3rd/third(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/3rd/third(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/3rd/third(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/3rd/third(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/3rd/third(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌  A polished and professional design. <br>
+                  📌  Features case studies, education, services, and a contact form. <br>
+                  📌  Simple yet effective to showcase your expertise. <br>
+                  📌  Ideal for consultants and business owners.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 4 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/4th/fourth(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/4th/fourth(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/4th/fourth(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/4th/fourth(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/4th/fourth(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/4th/fourth(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A well-structured portfolio for researchers and students. <br>
+                  📌 A visually stunning showcase for designers and artists. <br>
+                  📌 Engaging animations and smooth scrolling effects. <br>
+                  📌 Crafted for a seamless user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 5 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/5th/fifth(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/5th/fifth(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/5th/fifth(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/5th/fifth(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/5th/fifth(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/5th/fifth(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A single-page design with smooth scrolling navigation. <br>
+                  📌 This prioritizes readability and clean design. <br>
+                  📌 No unnecessary elements—just your work in focus. <br>
+                  📌 Perfect for writers, developers, and designers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 6 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/6th/sixth(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/6th/sixth(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/6th/sixth(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/6th/sixth(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/6th/sixth(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A minimal one-page portfolio with smooth scrolling. <br>
+                  📌 Sections for work, bio, certifications — all in one place. <br>
+                  📌 Smooth navigation with a distraction-free layout. <br>
+                  📌 Lightweight, fast-loading, and easy to navigate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 7 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/7th/seventh(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/7th/seventh(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/7th/seventh(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/7th/seventh(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/7th/seventh(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                
+                  <p>Features: <br>
+                    📌 A refined and elegant design to reflect your personality. <br>
+                    📌 A visually stunning showcase for designers and developers. <br>
+                    📌 Interactive project demos and detailed case studies. <br>
+                    📌 Optimized for performance and accessibility.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 8 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/8th/eigth(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/8th/eigth(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/8th/eigth(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/8th/eigth(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/8th/eigth(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/8th/eigth(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 Includes sections for work, skills, and contact. <br>
+                  📌 Perfect for academic and research professionals. <br>
+                  📌 Optimized, fast loading, and modern design. <br>
+                  📌 Fast, responsive, and easy to customize. 
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 9 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category B/9th/nine(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/9th/nine(2).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/9th/nine(3).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/9th/nine(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/9th/nine(5).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category B/9th/nine(6).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A minimal yet powerful portfolio to highlight your expertise. <br>
+                  📌 A single-page design with smooth scrolling navigation. <br>
+                  📌 Includes sections for work, skills, and contact. <br>
+                  📌 Fast, responsive, and easy to customize. <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio-1400">
+        <h2>Portfolio Category C - ₹1899/-</h2>
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 1 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category C/1st/one(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/1st/one(2).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/1st/one(3).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/1st/one(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/1st/one(5).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/1st/one(6).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/1st/one(7).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/1st/one(8).png"
+                    alt="Portfolio B Image 2"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A visually stunning portfolio with smooth parallax effects. <br>
+                  📌 A stylish dark-themed portfolio with a modern touch. <br>
+                  📌 Captivating animations bring your work to life. <br>
+                  📌 High-resolution image support with smooth transitions. <br>
+                  📌 Fully responsive and optimized for an immersive experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 2 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category C/2nd/two(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/2nd/two(2).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/2nd/two(3).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/2nd/two(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/2nd/two(5).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/2nd/two(6).png"
+                    alt="Portfolio B Image 3"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A high-tech portfolio with fluid animations and parallax layers. <br>
+                  📌 Engages visitors with smooth transitions and modern UI. <br>
+                  📌 Showcases your work, skills, and experience beautifully. <br>
+                  📌 Crafted for a seamless user experience. <br>
+                  📌 Ideal for developers, designers, and innovators.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 3 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category C/3rd/three(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/3rd/three(2).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/3rd/three(3).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/3rd/three(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/3rd/three(5).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/3rd/three(6).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/3rd/three(7).png"
+                    alt="Portfolio B Image 1"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 Perfect for creatives looking to make an impact. <br>
+                  📌 Advanced animations, custom branding, and multi-device support. <br>
+                  📌 Includes sections for work, skills, and contact. <br>
+                  📌 Focuses on content with subtle animations and typography. <br>
+                  📌 Designed to leave a lasting impression on viewers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 4 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category C/4th/four(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/4th/four(2).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/4th/four(3).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/4th/four(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/4th/four(5).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/4th/four(6).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/4th/four(7).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/4th/four(8).png"
+                    alt="Portfolio B Image 2"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A minimal one-page portfolio with smooth scrolling.
+                  📌 Showcases your work, skills, and experience beautifully.
+                  📌 A mesmerizing portfolio set against a cosmic starry backdrop.
+                  📌 Ideal for developers, designers, and storytellers.
+                  📌 Lightweight, fast-loading, and easy to navigate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Portfolio 5 Details <span class="arrow">▼</span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-wrapper">
+              <!-- Carousel for Portfolio B -->
+              <div class="carousel">
+                <div class="carousel-container">
+                  <img
+                    src="./Category C/5th/fifth(1).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(2).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(3).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(4).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(5).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(6).png"
+                    alt="Portfolio B Image 3"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(7).png"
+                    alt="Portfolio B Image 1"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(8).png"
+                    alt="Portfolio B Image 2"
+                  />
+                  <img
+                    src="./Category C/5th/fifth(9).png"
+                    alt="Portfolio B Image 2"
+                  />
+                </div>
+                <button class="carousel-prev">⟨</button>
+                <button class="carousel-next">⟩</button>
+              </div>
+              <div class="features">
+                <p>Features: <br>
+                  📌 A stylish dark & light themed portfolio with a modern touch. <br>
+                  📌 Focuses on content with subtle animations and typography. <br>
+                  📌 Ideal for developers, designers, and artists. <br>
+                  📌 A portfolio that blends depth and motion seamlessly. <br>
+                  📌 Engages visitors with smooth transitions and modern UI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactus" style=" padding: 8px;">
+        
+        
+        <div id="contact-section" style="text-align: center; background-color: white; padding: 20px; margin-bottom: -10px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="margin-bottom: 10px; color: #333; "> 📲 Contact Us</h1>
+            <p style="margin: 5px 0; font-size: 16px; color: #555;"><strong>Email:</strong> 📩 rigionitsolutions@gmail.com</p>
+            <p style="margin: 5px 0; font-size: 16px; color: #555;"><strong>Phone:</strong> 📞 +91 7389522364</p>
+            <p style="margin: 5px 0; font-size: 16px; color: #555;"><strong>LinkedIn:</strong> <a style="color: #333; text-decoration: none;" href="https://www.linkedin.com/company/rigion-it-solutions/"> rigion-it-solutions 👈</a> </p>
+            <p style="margin: 5px 0; font-size: 16px; color: #555;"><strong>Instagram:</strong> <a style="color: #333; text-decoration: none;" href="https://www.instagram.com/rigion_it_solutions/"> rigion_it_solutions 👈</a> </p>
+            <p style="margin: 5px 0; font-size: 16px; color: #555;"><strong>Website:</strong> <a style="color: #333; text-decoration: none;" href="https://rigionitsolutions.vercel.app/"> Rigion IT Solutions 👈</a> </p>
+
+        </div>
+        
+    </section>
+    
+  
+    </main>
+    <footer style="background-color: #222; color: white; text-align: center; padding: 15px; padding-left: 0px;  width: 100%;">
+      <p style="margin: 0;">&copy; 2025 Rigion IT Solutions. All rights reserved.</p>
+      <p style="margin: 5px 0;">
+          <a href="#" style="color: #f1c40f; text-decoration: none;">Privacy Policy</a> | 
+          <a href="#" style="color: #f1c40f; text-decoration: none;">Terms of Service</a>
+      </p>
+  </footer>
+
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach((accordion) => {
+        const header = accordion.querySelector(".accordion-header");
+        const arrow = header.querySelector(".arrow");
+
+        header.addEventListener("click", () => {
+          const content = accordion.querySelector(".accordion-content");
+          const isVisible = content.style.display === "block";
+
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach((c) => (c.style.display = "none"));
+          document
+            .querySelectorAll(".accordion-header")
+            .forEach((h) => h.classList.remove("open"));
+
+          if (!isVisible) {
+            content.style.display = "block";
+            header.classList.add("open");
+          } else {
+            content.style.display = "none";
+          }
+        });
+      });
+
+      document.querySelectorAll(".carousel").forEach((carousel) => {
+        const container = carousel.querySelector(".carousel-container");
+        const images = carousel.querySelectorAll("img");
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+        carousel
+          .querySelector(".carousel-prev")
+          .addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            container.style.transform = `translateX(-${currentIndex * 100}%)`;
+          });
+
+        carousel
+          .querySelector(".carousel-next")
+          .addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            container.style.transform = `translateX(-${currentIndex * 100}%)`;
+          });
+      });
+    </script>
+  </body>
+</html>
